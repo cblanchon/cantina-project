@@ -1,0 +1,10 @@
+/home/cabouz/Documents/CICD/cantina-project/project-2.0.1-src/src/main/java/com/cicdlectures/menuserver/controller/MenuController.java
+/home/cabouz/Documents/CICD/cantina-project/project-2.0.1-src/src/main/java/com/cicdlectures/menuserver/model/Dish.java
+/home/cabouz/Documents/CICD/cantina-project/project-2.0.1-src/src/main/java/com/cicdlectures/menuserver/MenuServerApplication.java
+/home/cabouz/Documents/CICD/cantina-project/project-2.0.1-src/src/main/java/com/cicdlectures/menuserver/repository/DishRepository.java
+/home/cabouz/Documents/CICD/cantina-project/project-2.0.1-src/src/main/java/com/cicdlectures/menuserver/dto/MenuDto.java
+/home/cabouz/Documents/CICD/cantina-project/project-2.0.1-src/src/main/java/com/cicdlectures/menuserver/service/ListMenuService.java
+/home/cabouz/Documents/CICD/cantina-project/project-2.0.1-src/src/main/java/com/cicdlectures/menuserver/service/CreateMenuService.java
+/home/cabouz/Documents/CICD/cantina-project/project-2.0.1-src/src/main/java/com/cicdlectures/menuserver/dto/DishDto.java
+/home/cabouz/Documents/CICD/cantina-project/project-2.0.1-src/src/main/java/com/cicdlectures/menuserver/model/Menu.java
+/home/cabouz/Documents/CICD/cantina-project/project-2.0.1-src/src/main/java/com/cicdlectures/menuserver/repository/MenuRepository.java
