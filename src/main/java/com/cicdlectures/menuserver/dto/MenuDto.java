@@ -1,13 +1,9 @@
 package com.cicdlectures.menuserver.dto;
 
 import java.util.Set;
-
-import javax.persistence.Entity;
-
 import java.util.List;
 import java.util.ArrayList;
 
-import com.cicdlectures.menuserver.model.Dish;
 import com.cicdlectures.menuserver.model.Menu;
 
 import lombok.AccessLevel;
@@ -20,10 +16,8 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @EqualsAndHashCode
-@Setter
-@Entity
 @Getter
-
+@Setter
 @Accessors(chain = true)
 @ToString
 public class MenuDto {
@@ -39,8 +33,6 @@ public class MenuDto {
     this.name = name;
     this.dishes = dishes;
   }
- 
-  
 
   public static List<MenuDto> fromModelIterable(Iterable<Menu> models) {
     List<MenuDto> menus = new ArrayList<>();
@@ -48,15 +40,14 @@ public class MenuDto {
     for (Menu model : models) {
       menus.add(MenuDto.fromModel(model));
     }
-   
 
     return menus;
   }
 
   public static MenuDto fromModel(Menu menu) {
-	    return new MenuDto()
-	      .setId(menu.getId())
-	      .setName(menu.getName())
-	      .setDishes(DishDto.fromModelSet(menu.getDishes()));
-	  }
+    return new MenuDto()
+      .setId(menu.getId())
+      .setName(menu.getName())
+      .setDishes(DishDto.fromModelSet(menu.getDishes()));
+  }
 }
