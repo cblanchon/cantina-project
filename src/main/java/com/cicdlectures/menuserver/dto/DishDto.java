@@ -43,4 +43,5 @@ public class DishDto {
   public static DishDto fromModel(Dish dish) {
     return new DishDto().setId(dish.getId()).setName(dish.getName());
   }
+
 }
