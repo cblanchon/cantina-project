@@ -19,14 +19,13 @@ import lombok.ToString;
 import lombok.experimental.Accessors;
 import lombok.NoArgsConstructor;
 
-
-@Setter
 @Entity
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @EqualsAndHashCode
 @Getter
+@Setter
 @ToString
-//@Accessors(chain = true)
+@Accessors(chain = true)
 public class Menu {
 
   @Id
@@ -45,10 +44,10 @@ public class Menu {
     this.dishes = dishes;
   }
 
-  
   public static Menu fromDto(MenuDto menuDto) {
-	    return new Menu(menuDto.getId(), menuDto.getName(), Dish.fromDtoSet(menuDto.getDishes()));
-	  }
-
-
+    return new Menu()
+      .setId(menuDto.getId())
+      .setName(menuDto.getName())
+      .setDishes(Dish.fromDtoSet(menuDto.getDishes()));
+  }
 }
